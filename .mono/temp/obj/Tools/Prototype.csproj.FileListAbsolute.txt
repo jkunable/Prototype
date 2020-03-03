@@ -1,0 +1,5 @@
+C:\Users\Jason Michel\Documents\Gadot Projects\Prototype\.mono\temp\bin\Tools\Prototype.dll
+C:\Users\Jason Michel\Documents\Gadot Projects\Prototype\.mono\temp\bin\Tools\Prototype.pdb
+C:\Users\Jason Michel\Documents\Gadot Projects\Prototype\.mono\temp\obj\Tools\Prototype.csprojAssemblyReference.cache
+C:\Users\Jason Michel\Documents\Gadot Projects\Prototype\.mono\temp\obj\Tools\Prototype.dll
+C:\Users\Jason Michel\Documents\Gadot Projects\Prototype\.mono\temp\obj\Tools\Prototype.pdb

@@ -1,0 +1,46 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Prototype"
+run/main_scene="res://World.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1440
+window/size/height=2960
+window/size/always_on_top=true
+window/size/test_width=360
+window/size/test_height=740
+window/handheld/orientation="portrait"
+window/stretch/mode="2d"
+window/stretch/aspect="keep_width"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[layer_names]
+
+3d_physics/layer_1="Ball"
+3d_physics/layer_2="Pins"
+3d_physics/layer_3="Obstacles"
+3d_physics/layer_4="Floor"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

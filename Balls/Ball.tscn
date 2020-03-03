@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Balls/Ball.cs" type="Script" id=1]
+[ext_resource path="res://FollowCamera.cs" type="Script" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+metallic = 0.25
+metallic_specular = 0.3
+roughness = 0.24
+
+[sub_resource type="SphereMesh" id=2]
+material = SubResource( 1 )
+
+[sub_resource type="SphereShape" id=3]
+
+[node name="Ball" type="RigidBody"]
+collision_mask = 14
+mode = 1
+mass = 6.0
+gravity_scale = 5.0
+linear_velocity = Vector3( 40, 0, 0 )
+script = ExtResource( 1 )
+shootForce = 200.0
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 3 )
+
+[node name="Container" type="Node" parent="."]
+
+[node name="ControlCamera" type="Camera" parent="Container"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 7.5 )
+far = 300.0
+script = ExtResource( 2 )
+_stopPoint = -185.0
